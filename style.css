@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    height: 200vh;
+    user-select: none;
+}
+.maincontainer{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,.9)), url("/11.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 95.5vh;
+}
+
+nav img{
+    margin-top: 1.9%;
+    margin-left: 3%;
+    border-radius: 15px;
+}
+nav button{
+    padding: 8px 16px;
+    font-size: 97%;
+    font-weight: 530;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 4%;
+}
+nav #lang, .last #lang{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    right: 12%;
+    font-weight: 520;
+    font-size: 90%;
+    padding: 9px 8px;
+}
+.last #lang{
+    padding: 13px 13px;
+    font-size: 110%;
+    color: gray;
+    border: 1px solid gray;
+}
+nav #signin{
+    color: white;
+    border-radius: 5px;
+    right: 4%;
+    background-color: #e50914;
+    border: 1px solid red;
+    font-weight: 530;
+}
+.center{
+    color: white;
+    position: absolute;
+    width: 45vw;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50vh;
+    text-align: center;
+}
+.center #pmain{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+.center span{
+    font-size: 27px;
+    font-weight: 700px;
+    word-spacing: 2px;
+}
+.center #text, .end #text{
+    font-size: 19px;
+    font-weight: 700px;
+    word-spacing: 1px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.end #text{
+    margin-top: 15%;
+}
+.center input, .end input{
+    width: 70%;
+    height: 60px !important;
+    border: 3px solid transparent;
+    outline: none;
+    border-radius: 3px 0px 0px 3px ;
+    padding-left: 2%;
+    font-size: 102%;
+    float: left;
+}
+.end{
+    width: 45vw;
+    margin: auto;
+    height: 30vh;
+}
+.center button, .end button{
+    width: 28%;
+    height: 60px !important;
+    border: 3px solid transparent;
+    outline: none;
+    border-radius: 0px 3px 3px 0px;
+    font-size: 150%;
+    background-color: red;
+    color: white;
+    padding: 5px 2px;
+    margin-left: .4%;
+    float: left;
+}
+.center button i{
+    font-size: 80%;
+    font-weight: light;
+}
+
+.sep{
+    width: 100%;
+    height: .6%;
+    background-color: rgb(89, 87, 87);
+}
+
+.box1, .box2{
+    width: 100%;
+    background-color: black;
+    display: inline-block;
+}
+
+.box1 .our-story-card-img{
+    z-index: 1;
+    position: relative;
+}
+
+.box1ani{
+    position: relative;
+}
+
+.box1 video{
+    position: absolute;
+    top: 20.2%;
+    right: 10%;
+}
+.box1 .box1text{
+    width: 50vw;
+    color: white;
+    float: left;
+    height: 65vh;
+}
+.box1text #main{
+    margin-top: 22vh;
+    margin-left: 25%;
+    font-size: 50px;
+    font-weight: 700;
+}
+.box1text #text{
+    margin-top: 2vh;
+    margin-left: 25%;
+    font-size: 25px;
+}
+
+/* row2>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.box2 .our-story-card-img{
+    z-index: 1;
+    position: relative;
+}
+.box2ani{
+    position: relative;
+    float: left;
+}
+
+.box2 video{
+    position: absolute;
+    top: 20.2%;
+    right: 10%;
+}
+.box2 .box2text{
+    width: 50vw;
+    color: white;
+    float: left;
+    height: 65vh;
+}
+.box2text #main2{
+    padding-top: 22vh;
+    margin-left: 25%;
+    font-size: 50px;
+    font-weight: 700;
+}
+.box2text #text2{
+    padding-top: 2vh;
+    margin-left: 25%;
+    font-size: 25px;
+}
+
+.box2 video{
+    position: absolute;
+    top: 20.2%;
+    left: 10%;
+}
+
+.box5{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.box5 h1{
+    padding-top: 5%;
+    margin-bottom: 3%;
+    font-size: 50px;
+}
+.box5 .boxes{
+    width: 60vw;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #303030;
+}
+.box5 .boxes .text{
+    width: 90%;
+    margin-left: 5%;
+    text-align: left;
+    font-size: 160%;
+}
+
+.box5 .boxes .plus {
+    width: 10%;
+    position: relative;
+}
+.show{
+    height: auto;
+    width: 60vw;
+    margin: auto;
+    margin-top: .1%;
+    margin-bottom: 1%;
+    font-size: 150%;
+    background-color: #303030;
+    display: none;
+}
+.box5 .boxes .fa-times{
+    display: none;
+}
+.show p{
+    margin-left: 5%;
+    text-align: left;
+    padding-top: 3%;
+    padding-right: 4%;
+}
+.show p:last-child{
+    padding-bottom: 3%;
+}
+.plus i{
+    font-size: 25px;
+    position: absolute;
+    top: -13px;
+    right: 35px;
+}
+.footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: auto;
+}
+.footer .divs .div, .footer #line{
+    width: 15vw;
+    font-size: 80%;
+    color: gray;
+}
+.footer .divs .div p{
+    padding-top: 8%;
+}
+.footer .divs .div p:hover, .footer h4 span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer .divs{
+    display: flex;
+    margin-left: 20vw;
+    margin-top: 2%;
+}
+.footer h4{
+    margin-left: 20vw;
+    padding-top: 5%;
+    font-weight: 500;
+    color: gray;
+}
+.last{
+    margin-left: 20vw;
+    margin-top: 3%;
+}
+.last #line{
+    line-height: 80px;
+}
+#sep3, #sep5{
+    margin-top: -.3%;
+}
+
+#box3ani .our-story-card-img{
+    position: absolute;
+}
+#box3ani .third{
+    position: relative;
+    margin-left: 45%;
+}
+
+#box3ani .third video{
+    width: 400px;
+    position: absolute;
+    top: 30px;
+    right: 25%;
+}
+
+#box1text{
+    width: 50%;
+}
+.box5 .boxes{
+    margin-top: 1%;
+}
+#sep4{
+    margin-top: -.3%;
+}
+
+
+
+/* java script content */
+
+nav .btnshow{
+    height: 50%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 90%;
+    line-height: 25px;
+}
+nav #english{
+    background-color: rgb(110, 140, 230);
+    
+}
+nav #hindi{
+    background-color: gray;
+}
+.show1{
+    height: 50px;
+    width: 98px;
+    position: absolute;
+    right: 11.95%;
+    top: 8.6%;
+    display: none;
+}
+
+
+
+
